@@ -62,6 +62,7 @@
   copy:
     src: jenkins.conf
     dest: /etc/nginx/conf.d/jenkins.conf
+    remote_src: yes
     
 - name: Reboot the system
   become: true
