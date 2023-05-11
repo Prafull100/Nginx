@@ -49,11 +49,6 @@
   copy:
     src: jenkins.conf
     dest: /etc/nginx/conf.d/jenkins.conf
-    
-- name: Reboot the system
-  become: true
-  reboot:
-    reboot_timeout: 2600
-    msg: "Reboot initiated by Ansible"    
+
  
 
