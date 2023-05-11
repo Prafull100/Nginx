@@ -40,15 +40,6 @@
     name: jenkins
     state: present
   when: ansible_distribution == "CentOS"
-    
-- name: Enable Nginx and Jenkins services
-  service:
-    name: "{{ item }}"
-    enabled: true
-    state: started
-  loop:
-    - nginx
-    - jenkins
 
 - name: Create Nginx configuration file for Jenkins
   file:
