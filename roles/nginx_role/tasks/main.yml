@@ -54,15 +54,15 @@
   file:
     path: /etc/nginx/conf.d/jenkins.conf
     state: touch
-    owner: target1
-    group: target1
-    mode: 0777
+#     owner: target1
+#     group: target1
+#     mode: 0777
 
 - name: Configure Nginx as reverse proxy for Jenkins
   copy:
     src: jenkins.conf
     dest: /etc/nginx/conf.d/jenkins.conf
-    remote_src: yes
+#     remote_src: yes
     
 - name: Reboot the system
   become: true
