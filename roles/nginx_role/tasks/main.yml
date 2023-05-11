@@ -44,8 +44,7 @@
 - name: Enable Nginx and Jenkins services
   service:
     name: "{{ item }}"
-    enabled: true
-    state: started
+    enabled: yes
   loop:
     - nginx
     - jenkins
