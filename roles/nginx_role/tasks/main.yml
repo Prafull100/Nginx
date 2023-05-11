@@ -54,9 +54,6 @@
   file:
     path: /etc/nginx/conf.d/jenkins.conf
     state: touch
-#     owner: target1
-#     group: target1
-#     mode: 0777
 
 - name: Configure Nginx as reverse proxy for Jenkins
   copy:
