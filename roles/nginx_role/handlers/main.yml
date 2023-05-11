@@ -4,12 +4,12 @@
     name: nginx
     state: restarted
     
-- name: Enable Nginx and Jenkins services
-  service:
-    name: "{{ item }}"
-    enabled: true
-    state: started
-  loop:
-    - nginx
-    - jenkins
+# - name: Enable Nginx and Jenkins services
+#   service:
+#     name: "{{ item }}"
+#     enabled: true
+#     state: started
+#   loop:
+#     - nginx
+#     - jenkins
 
