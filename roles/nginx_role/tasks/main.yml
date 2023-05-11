@@ -44,7 +44,7 @@
   file:
     path: /etc/nginx/conf.d/jenkins.conf
     state: touch
-    owner: slave1
+    owner: target1
     group: slave1
     mode: 0755
 
